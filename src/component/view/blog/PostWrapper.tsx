@@ -1,19 +1,16 @@
 import React from "react";
+import { PostWrapperInterface } from "../../interface/PostWrapperInterface";
 
-interface PostWrapperInterface {
-  children?: JSX.Element[] | JSX.Element,
-  title?: string
-
-}
-
-const PostWrapper = ({ children, title }: PostWrapperInterface) => {
-
-  return (
-    <>
-      <h1>{title} </h1>
-      {children}
-    </>
-  );
+const PostWrapper = ({
+    children,
+    title,
+}: PostWrapperInterface): JSX.Element => {
+    return (
+        <>
+            <h1>{title} </h1>
+            {children}
+        </>
+    );
 };
 
 export default PostWrapper;

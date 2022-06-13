@@ -4,3 +4,9 @@ node_modules
 yarn.lock
 package-lock.json
 public
+.prettierrc
+tsconfig.json
+.eslintrc.json
+package.json
+README.md
+styles

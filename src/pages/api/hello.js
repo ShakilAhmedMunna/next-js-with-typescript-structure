@@ -6,6 +6,6 @@
  * @param {any}res
  */
 const handler = (req, res) => {
-  res.status(200).json({ name: "John Doe" });
+    res.status(200).json({ name: "John Doe" });
 };
 export default handler;
