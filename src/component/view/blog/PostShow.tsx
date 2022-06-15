@@ -6,10 +6,28 @@ import { PostShowInterface } from "../../interface/PostShowInterface";
  * @return {JSX.Element} : jsx code for post show page
  * @param {Array} postList
  */
-const PostShow = ({ postList = [] }: PostShowInterface): JSX.Element => {
+const PostShow = ({ postList }: PostShowInterface): JSX.Element => {
+    const mappingPostList = () => {
+        return postList.map(
+            (
+                post,
+                index: number
+            ) => {
+                return (
+                    <div key={index}>
+                        <h2>{post.id + ". " + post.title}</h2>
+                        <p>{post.body}</p>
+                        <small>{post.response.date.create_at}</small>
+                    </div>
+                );
+            }
+        );
+    };
+
     return (
         <>
-            <h1>List will be show </h1>
+            <h5>Posts</h5>
+            {mappingPostList()}
         </>
     );
 };
