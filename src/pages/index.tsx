@@ -3,12 +3,7 @@ import Head from "next/head";
 import Addition from "../component/view/calculator/Addition";
 import PostWrapper from "../component/view/blog/PostWrapper";
 import OnClickTest from "../component/view/blog/OnClickTest";
-
-interface HomeInterface {
-    pageTitle: string;
-    descriptionContent: string;
-    postTitle: string;
-}
+import {HomeInterface} from "../component/interface/HomeInterface";
 
 /**
  * this is the home page

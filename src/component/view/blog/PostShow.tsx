@@ -7,6 +7,9 @@ import { PostShowInterface } from "../../interface/PostShowInterface";
  * @param {Array} postList
  */
 const PostShow = ({ postList }: PostShowInterface): JSX.Element => {
+
+
+
     const mappingPostList = () => {
         return postList.map(
             (
